@@ -40,4 +40,26 @@ minikube service list
 | kube-system | kube-dns   | No node port |
 |-------------|------------|--------------|----------------------------|
 
+minikube ip
+192.168.39.32
+```
+
+### connect to MySQL
+```
+mysql -u root -p -P 30000 -h $(minikube ip)
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 13
+Server version: 5.7.41 MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2023, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql>
+
 ```
